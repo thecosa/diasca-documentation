@@ -1,2 +1,2 @@
-# diasca-documentation
+# DIASCA Documentation
 Documentation and Guidelines for DIASCA
