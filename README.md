@@ -9,7 +9,6 @@ Welcome to the official documentation for the DIASCA (Digital Integration of Agr
 3. Data Model
    - [Overview](03-data-model/01-overview.md)
    - [Entities and Relationships](03-data-model/02-entities-and-relationships.md)
-   - [Detailed Table Descriptions](03-data-model/03-detailed-table-descriptions.md)
    - [Parameter Tables](03-data-model/04-parameter-tables.md)
 4. [Parameter Standardization](04-parameter-standardization.md)
 5. [Data Transmission Standards](05-data-transmission-standards.md)
