@@ -241,6 +241,13 @@ Represents significant occurrences in the supply chain.
 
 ## Diagram
 
-For a visual representation of these entities and relationships, refer to the entity-relationship diagram in the `assets/images` directory.
+For a detailed representation of the entities and their relationships, refer to the entity-relationship diagram below.
 
-![Entity-Relationship Diagram](https://github.com/thecosa/diasca-documentation/blob/main/assets/images/DIASCA%20Data%20Model.png)
+![Entity-Relationship Diagram](/blob/main/assets/images/DIASCA%20Data%20Model.png)
+
+In addition to the diagram, you can find the following resources in the assets directory:
+
+- **DBML File**: The complete data model defined in DBML format is available.
+- **MySQL Implementation**: A script for implementing the data model in MySQL can be found.
+
+These resources provide comprehensive details for understanding and implementing the DIASCA data model.
