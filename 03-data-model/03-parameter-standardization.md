@@ -41,12 +41,10 @@ Defines the types of transactions within the supply chain. This parameter is use
 
 | Value       | Description                                      |
 |-------------|--------------------------------------------------|
+| `Sale`      | A transaction where products are sold. |
 | `Transfer`  | A transaction where products are transferred between entities without a sale. |
 | `Return`    | A transaction where products are returned.       |
 | `Donation`  | A transaction where products are donated.        |
-
-### Discussion:
-We have removed `Purchase` and `Sale` because every transaction inherently involves a buyer and a seller. Other transaction types like `Transfer`, `Return`, and `Donation` provide more clarity for the specific nature of the transaction.
 
 ## Unit of Measure
 
@@ -70,9 +68,7 @@ Defines the types of events that can occur within the supply chain. This paramet
 | `Processing` | An event where products are processed.           |
 | `Inspection` | An event where an inspection occurs.             |
 
-## Additional Parameters for Other Tables
-
-### SiteParameters
+## SiteParameters
 
 Stores custom key-value pairs for sites.
 
@@ -82,7 +78,7 @@ Stores custom key-value pairs for sites.
 | `ownership`        | Ownership status of the site            | `Owned`, `Leased`                          |
 | `organic_certified`| Organic certification status            | `Certified`, `In Conversion`, `Not Certified` |
 
-### PeopleParameters
+## PeopleParameters
 
 Stores custom key-value pairs for people.
 
@@ -92,7 +88,7 @@ Stores custom key-value pairs for people.
 | `years_of_experience` | Number of years of experience in the role | `10 years`, `5 years`                      |
 | `certifications`   | Certifications obtained                 | `ISO 9001`, `Fair Trade`                   |
 
-### TransactionParameters
+## TransactionParameters
 
 Stores custom key-value pairs for transactions.
 
