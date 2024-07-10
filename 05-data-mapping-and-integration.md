@@ -3,11 +3,6 @@
 
 This guide provides instructions on how to align existing data systems with the DIASCA standard, ensuring smooth integration and data exchange across different platforms in the agricultural supply chain.
 
-## Table of Contents
-1. [Mapping Existing Data Structures](#mapping-existing-data-structures)
-2. [Handling Custom Fields](#handling-custom-fields)
-3. [Automated Mapping Tools](#automated-mapping-tools)
-
 ## Mapping Existing Data Structures
 
 To align your current system with the DIASCA model, follow these steps:
