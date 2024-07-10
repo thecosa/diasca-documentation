@@ -243,7 +243,7 @@ Represents significant occurrences in the supply chain.
 
 For a detailed representation of the entities and their relationships, refer to the entity-relationship diagram below.
 
-![Entity-Relationship Diagram](/blob/main/assets/images/DIASCA%20Data%20Model.png)
+![Entity-Relationship Diagram](https://github.com/thecosa/diasca-documentation/blob/main/assets/images/DIASCA%20Data%20Model.png)
 
 In addition to the diagram, you can find the following resources in the assets directory:
 
