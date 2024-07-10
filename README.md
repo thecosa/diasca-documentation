@@ -10,10 +10,10 @@ Welcome to the official documentation for the DIASCA (Digital Integration of Agr
    - [Overview](03-data-model/01-overview.md)
    - [Entities and Relationships](03-data-model/02-entities-and-relationships.md)
    - [Parameter Standardization](03-data-model/03-parameter-standardization.md)
-4. [Data Transmission Standards](05-data-transmission-standards.md)
-5. [Data Mapping and Integration Guide](06-data-mapping-and-integration.md)
-6. [Data Validation Framework](07-data-validation-framework.md)
-7. [Versioning and Change Management](08-versioning-and-change-management.md)
+4. [Data Transmission Standards](04-data-transmission-standards.md)
+5. [Data Mapping and Integration Guide](05-data-mapping-and-integration.md)
+6. [Data Validation Framework](06-data-validation-framework.md)
+7. [Versioning and Change Management](07-versioning-and-change-management.md)
 
 ## About DIASCA
 
