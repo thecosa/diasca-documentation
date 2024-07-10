@@ -156,7 +156,7 @@ Here is an example of a JSON response for a site object:
   "latitude": 40.7128,
   "longitude": -74.0060,
   "altitude": 10,
-  "geojson": "{"type": "Point", "coordinates": [40.7128, -74.0060]}",
+  "geojson": {"type": "Point", "coordinates": [40.7128, -74.0060]},
   "size": 50.5,
   "type": "Farm",
   "address": "123 Green Farm Lane, Springfield"
