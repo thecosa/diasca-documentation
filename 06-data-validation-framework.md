@@ -3,13 +3,6 @@
 
 To ensure data quality and consistency across systems, we've established the following validation rules:
 
-## Table of Contents
-1. [General Validation Rules](#general-validation-rules)
-2. [Entity-Specific Validation](#entity-specific-validation)
-    - [Sites](#sites)
-    - [Transactions](#transactions)
-3. [Parameter Validation](#parameter-validation)
-
 ## General Validation Rules
 
 1. All required fields must be present and non-null.
