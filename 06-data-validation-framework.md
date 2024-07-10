@@ -5,31 +5,6 @@ To ensure data quality and consistency across systems, we've established the fol
 
 ## General Validation Rules
 
-1. All required fields must be present and non-null.
-2. String fields should not exceed their specified maximum length.
-3. Numeric fields should be within specified ranges (e.g., latitude between -90 and 90).
-4. Dates should be in ISO 8601 format (YYYY-MM-DD).
-
-## Entity-Specific Validation
-
-### Sites
-
-1. Latitude must be between -90 and 90.
-2. Longitude must be between -180 and 180.
-3. Size must be positive.
-
-### Transactions
-
-1. Transaction date must not be in the future.
-2. Quantity must be positive.
-
-## Parameter Validation
-
-1. The combination of (entity_id, key, observation_date) must be unique in each parameter table.
-2. Observation date must not be in the future.
-
-## General Validation Rules
-
 ### Required Fields
 
 All required fields must be present and non-null. This ensures that critical information is always captured and prevents incomplete records from being stored.
