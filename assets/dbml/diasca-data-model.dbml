@@ -1,1 +1,143 @@
 
+// Enterprises: Represents organizations involved in the agro supply chain
+Table Enterprises {
+  id integer [primary key]
+  name varchar
+  type varchar // e.g., Farm, Processor, Distributor
+  contact_information text
+}
+
+// Sites: Represents physical locations owned or operated by enterprises
+Table Sites {
+  id integer [primary key]
+  enterprise_id integer [ref: > Enterprises.id]
+  name varchar
+  latitude float
+  longitude float
+  altitude float
+  geojson text // Stores detailed geographical data
+  size float
+  type varchar // e.g., Farm, Processing facility, Warehouse
+  address text
+}
+
+// SiteParameters: Stores custom key-value pairs for sites
+Table SiteParameters {
+  id integer [primary key]
+  site_id integer [ref: > Sites.id]
+  key varchar // Custom parameter name
+  value text // Custom parameter value
+  observation_date date
+
+  indexes {
+    (site_id, observation_date, key) [unique]
+  }
+}
+
+// Plots: Represents specific areas within a site, typically for cultivation
+Table Plots {
+  id integer [primary key]
+  site_id integer [ref: > Sites.id]
+  name varchar
+  latitude float
+  longitude float
+  altitude float
+  geojson text // Stores detailed geographical data
+  size float
+  soil_type varchar
+  crop_history text
+  primary_land_use varchar // e.g., Crop cultivation, Pasture, Orchard
+  description text
+}
+
+// PlotParameters: Stores custom key-value pairs for plots
+Table PlotParameters {
+  id integer [primary key]
+  plot_id integer [ref: > Plots.id]
+  key varchar // Custom parameter name
+  value text // Custom parameter value
+  observation_date date
+
+  indexes {
+    (plot_id, observation_date, key) [unique]
+  }
+}
+
+// People: Represents individuals involved in the agro supply chain
+Table People {
+  id integer [primary key]
+  name varchar
+  role varchar // e.g., Farmer, Manager, Inspector
+  contact_information text
+  associated_enterprise_id integer [ref: > Enterprises.id]
+}
+
+// PeopleParameters: Stores custom key-value pairs for people
+Table PeopleParameters {
+  id integer [primary key]
+  person_id integer [ref: > People.id]
+  key varchar // Custom parameter name
+  value text // Custom parameter value
+  observation_date date
+
+  indexes {
+    (person_id, observation_date, key) [unique]
+  }
+}
+
+// Products: Represents agricultural products
+Table Products {
+  id integer [primary key]
+  name varchar
+  type varchar // e.g., Grain, Vegetable, Fruit
+  description text
+  unit_of_measure varchar
+}
+
+// Batches: Represents specific quantities of products
+Table Batches {
+  id integer [primary key]
+  product_id integer [ref: > Products.id]
+  origin_plot_id integer [ref: > Plots.id]
+  quantity float
+  production_date date
+  expiry_date date
+}
+
+// Transactions: Represents exchanges of products between enterprises
+Table Transactions {
+  id integer [primary key]
+  type varchar // e.g., Purchase, Sale, Transfer
+  date_of_contract date
+  seller_enterprise_id integer [ref: > Enterprises.id]
+  buyer_enterprise_id integer [ref: > Enterprises.id]
+  batch_id integer [ref: > Batches.id]
+  quantity float
+  price float
+}
+
+// TransactionParameters: Stores custom key-value pairs for transactions
+Table TransactionParameters {
+  id integer [primary key]
+  transaction_id integer [ref: > Transactions.id]
+  key varchar // Custom parameter name
+  value text // Custom parameter value
+  observation_date date
+
+  indexes {
+    (transaction_id, observation_date, key) [unique]
+  }
+}
+
+// Events: Represents significant occurrences in the supply chain
+Table Events {
+  id integer [primary key]
+  type varchar // e.g., Planting, Harvesting, Processing, Inspection
+  date date
+  site_id integer [ref: > Sites.id]
+  plot_id integer [ref: > Plots.id]
+  batch_id integer [ref: > Batches.id]
+  person_id integer [ref: > People.id]
+  description text
+  attachments text // Could store file paths or URLs to relevant documents
+}
