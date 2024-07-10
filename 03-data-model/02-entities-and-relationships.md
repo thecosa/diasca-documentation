@@ -242,3 +242,5 @@ Represents significant occurrences in the supply chain.
 ## Diagram
 
 For a visual representation of these entities and relationships, refer to the entity-relationship diagram in the `assets/images` directory.
+
+![Entity-Relationship Diagram](../assets/images/DIASCA Data Model.png)
