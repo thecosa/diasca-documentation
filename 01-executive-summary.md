@@ -21,7 +21,7 @@ The DIASCA data model, defined in DBML format, encompasses various entities in t
 Parameter standardization ensures that key data elements are consistently defined and used across the entire supply chain. This includes standardizing types of enterprises, sites, plot parameters, and transaction attributes.
 
 ### 3. Data Transmission Standards
-Data transmission standards outline the protocols and formats for exchanging data between systems. By adhering to standards such as HTTP/HTTPS, FTP/SFTP, and data formats like JSON and XML, DIASCA ensures secure and efficient data exchange.
+Data transmission standards outline the protocols and formats for exchanging data between systems. By adhering to standards such as HTTPS, SFTP, and data formats like JSON, DIASCA ensures secure and efficient data exchange.
 
 ### 4. Data Mapping and Integration
 Data mapping and integration processes facilitate the seamless flow of data from diverse sources into the DIASCA system. This includes defining source-to-target mappings, establishing ETL processes, and utilizing API integrations for real-time data exchange.
