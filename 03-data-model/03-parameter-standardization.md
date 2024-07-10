@@ -120,6 +120,3 @@ While the parameters listed above provide a standardized set of examples, users 
 | `harvest_method`      | Method used for harvesting                       | `Manual`, `Mechanical`                    |
 
 By following these best practices, you can ensure that your custom keys are easily understandable, maintain consistency across datasets, and improve overall data quality.
-
-
-Parameter standardization is crucial for ensuring data interoperability and consistency across the DIASCA data model. These standardizations help in reducing ambiguity and improving data quality.
