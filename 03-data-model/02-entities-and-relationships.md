@@ -11,7 +11,7 @@ Represents organizations involved in the agro supply chain.
 **Attributes:**
 - `id` (integer): Primary key.
 - `name` (varchar): Name of the enterprise.
-- `type` (varchar): Type of enterprise (e.g., Farm, Processor, Distributor).
+- `type` (varchar): Type of enterprise (e.g., Farm, Processor, Exporter).
 - `contact_information` (text): Contact details of the enterprise.
 
 ### Sites
