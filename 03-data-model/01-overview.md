@@ -1,6 +1,6 @@
 # Overview
 
-The DIASCA Sustainability Data Standard (SDS) aims to provide a comprehensive and unified framework for data interoperability across the agricultural supply chain. At the core of the SDS is the Data Model, which defines the structure and relationships of various entities involved in the agro supply chain.
+The DIASCA Sustainability Data Standard (SDS) aims to provide a unified framework for data interoperability across the agricultural supply chain. At the core of the SDS is the Data Model, which defines the structure and relationships of various entities involved in the agro supply chain.
 
 This section provides an overview of the data model, its components, and its significance within the SDS.
 
@@ -14,6 +14,8 @@ This section provides an overview of the data model, its components, and its sig
 6. **Batches**: Specific quantities of products.
 7. **Transactions**: Exchanges of products between enterprises.
 8. **Events**: Significant occurrences in the supply chain.
+9. **Compliance**: Compliance-related data, including deforestation-free confirmation, local legislation compliance, risk assessment, and due diligence statements.
+10. **Audits**: Independent audit and public reporting details.
 
 ## Importance of the Data Model
 
